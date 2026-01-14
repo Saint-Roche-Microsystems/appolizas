@@ -26,7 +26,7 @@ class PolizCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bgColor = backgroundColor ?? Colors.white.withOpacity(0.9);
+    final bgColor = backgroundColor ?? Colors.white.withValues(alpha: 0.9);
 
     final cardContent = Container(
       width: width,
@@ -36,19 +36,19 @@ class PolizCard extends StatelessWidget {
         color: bgColor,
         borderRadius: BorderRadius.circular(borderRadius),
         border: Border.all(
-          color: Colors.white.withOpacity(0.4),
+          color: Colors.white.withValues(alpha: 0.4),
           width: 1.5,
         ),
         boxShadow: hasShadow
             ? [
           BoxShadow(
-            color: Colors.black.withOpacity(0.08),
+            color: Colors.black.withValues(alpha: 0.08),
             blurRadius: 20,
             offset: const Offset(0, 4),
             spreadRadius: 0,
           ),
           BoxShadow(
-            color: Colors.black.withOpacity(0.04),
+            color: Colors.black.withValues(alpha: 0.04),
             blurRadius: 8,
             offset: const Offset(0, 2),
             spreadRadius: 0,
@@ -68,8 +68,8 @@ class PolizCard extends StatelessWidget {
           child: InkWell(
             onTap: onTap,
             borderRadius: BorderRadius.circular(borderRadius),
-            splashColor: Colors.blue.withOpacity(0.1),
-            highlightColor: Colors.blue.withOpacity(0.05),
+            splashColor: Colors.blue.withValues(alpha: 0.1),
+            highlightColor: Colors.blue.withValues(alpha: 0.05),
             child: cardContent,
           ),
         ),

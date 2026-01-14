@@ -5,7 +5,6 @@ import '../../models/automovil_model.dart';
 import '../../widgets/poliz_text_field.dart';
 import '../../widgets/poliz_select.dart';
 import '../../widgets/poliz_button.dart';
-import '../../widgets/poliz_card.dart';
 
 class AutomovilForm extends StatefulWidget {
   final Function(Automovil) onSubmit;

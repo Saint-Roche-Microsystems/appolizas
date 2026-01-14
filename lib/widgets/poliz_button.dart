@@ -39,14 +39,14 @@ class PolizButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           backgroundColor: bgColor,
           foregroundColor: fgColor,
-          disabledBackgroundColor: bgColor.withOpacity(0.6),
-          disabledForegroundColor: fgColor.withOpacity(0.6),
+          disabledBackgroundColor: bgColor.withValues(alpha: 0.6),
+          disabledForegroundColor: fgColor.withValues(alpha: 0.6),
           padding: padding ?? const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(borderRadius),
           ),
           elevation: 2,
-          shadowColor: bgColor.withOpacity(0.3),
+          shadowColor: bgColor.withValues(alpha: 0.3),
         ),
         child: isLoading
             ? SizedBox(
