@@ -71,6 +71,18 @@ class _AutomovilFormState extends State<AutomovilForm> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(24),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Image.asset(
+                  'assets/images/car.jpg',
+                  height: 150,
+                  fit: BoxFit.contain,
+                ),
+              ),
+            ),
             Text(
               'Complete los datos del vehículo',
               style: TextStyle(
