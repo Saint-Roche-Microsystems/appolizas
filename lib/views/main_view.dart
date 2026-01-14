@@ -39,7 +39,6 @@ class _MainViewState extends State<MainView> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue,
         onTap: _onItemTapped,
       ),
     );

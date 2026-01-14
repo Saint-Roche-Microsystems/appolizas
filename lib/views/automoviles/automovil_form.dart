@@ -202,7 +202,6 @@ class _AutomovilFormState extends State<AutomovilForm> {
               text: 'Guardar',
               onPressed: _handleSubmit,
               isLoading: widget.isLoading,
-              backgroundColor: Colors.blue,
             ),
           ],
         ),

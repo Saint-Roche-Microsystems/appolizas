@@ -16,8 +16,6 @@ class AutomovilesView extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Registro de Automóviles'),
-        backgroundColor: Colors.blue,
-        foregroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
         child: AutomovilForm(

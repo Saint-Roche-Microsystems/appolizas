@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../themes/color_schema.dart';
 
 class PolizTextField extends StatelessWidget {
   final TextEditingController? controller;
@@ -52,11 +53,11 @@ class PolizTextField extends StatelessWidget {
         labelText: labelText,
         hintText: hintText,
         prefixIcon: prefixIcon != null
-            ? Icon(prefixIcon, color: Colors.blue.shade400)
+            ? Icon(prefixIcon, color: SaintColors.primary)
             : null,
         suffixIcon: suffixIcon != null
             ? IconButton(
-          icon: Icon(suffixIcon, color: Colors.blue.shade400),
+          icon: Icon(suffixIcon, color: SaintColors.primary),
           onPressed: onSuffixIconPressed,
         )
             : null,
@@ -70,15 +71,15 @@ class PolizTextField extends StatelessWidget {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Colors.blue, width: 2),
+          borderSide: const BorderSide(color: SaintColors.primary, width: 2),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Colors.red, width: 1.5),
+          borderSide: const BorderSide(color: SaintColors.error, width: 1.5),
         ),
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Colors.red, width: 2),
+          borderSide: const BorderSide(color: SaintColors.error, width: 2),
         ),
         filled: true,
         fillColor: Colors.grey.shade50,

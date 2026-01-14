@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../themes/color_schema.dart';
 
 class PolizButton extends StatelessWidget {
   final String text;
@@ -28,8 +29,8 @@ class PolizButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bgColor = backgroundColor ?? Colors.blue;
-    final fgColor = foregroundColor ?? Colors.white;
+    final bgColor = backgroundColor ?? SaintColors.primary;
+    final fgColor = foregroundColor ?? SaintColors.contrast;
 
     return SizedBox(
       width: width,

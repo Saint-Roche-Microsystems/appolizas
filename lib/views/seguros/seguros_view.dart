@@ -80,8 +80,6 @@ class _SegurosViewState extends ConsumerState<SegurosView> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Seguros'),
-        backgroundColor: Colors.green,
-        foregroundColor: Colors.white,
       ),
       body: _buidlBody(state),
     );
