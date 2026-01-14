@@ -14,9 +14,8 @@ class _SegurosViewState extends ConsumerState<SegurosView> {
   @override
   void initState() {
     super.initState();
-    // Cargar seguros al iniciar
     Future.microtask(
-          () => ref.read(seguroControllerProvider.notifier).cargarSeguros(),
+      () => ref.read(seguroControllerProvider.notifier).cargarSeguros(),
     );
   }
 
