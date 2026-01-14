@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../themes/color_schema.dart';
 
 class PolizSnackBar {
   static void show(
@@ -70,7 +71,7 @@ class PolizSnackBar {
     show(
       context,
       message: message,
-      backgroundColor: Colors.red.shade600,
+      backgroundColor: SaintColors.error,
       textColor: Colors.white,
       icon: Icons.error_outline,
       duration: duration,

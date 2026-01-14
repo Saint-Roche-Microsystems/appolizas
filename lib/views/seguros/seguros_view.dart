@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../themes/color_schema.dart';
 import '../../widgets/poliz_snackbar.dart';
 import '../../controllers/seguro_controller.dart';
 import 'seguro_item.dart';
@@ -43,7 +44,7 @@ class _SegurosViewState extends ConsumerState<SegurosView> {
           ElevatedButton(
             onPressed: () => Navigator.of(context).pop(true),
             style: TextButton.styleFrom(
-              backgroundColor: Colors.red,
+              backgroundColor: SaintColors.error,
               foregroundColor: Colors.white,
             ),
             child: const Text('Eliminar'),

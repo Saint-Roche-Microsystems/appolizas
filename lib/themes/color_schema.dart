@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'color_palettes.dart';
 
 class SaintColors {
-  static const Color primary = NatureColors.green;
-  static const Color secondary = NatureColors.lightGreen;
-  static const Color background = NatureColors.bone;
-  static const Color foreground = NatureColors.darkGreen;
-  static const Color surface = NatureColors.lightGray;
-  static const Color contrast = NatureColors.gold;
+  static const Color primary = DreamPalette.deepPurple;
+  static const Color secondary = DreamPalette.lightPurple;
+  static const Color background = DreamPalette.ivory;
+  static const Color foreground = DreamPalette.charcoal;
+  static const Color surface = DreamPalette.lightGray;
+  static const Color contrast = DreamPalette.plum;
 
-  static const Color error = WarmColors.red;
-  static const Color success = WarmColors.green;
+  static const Color error = DreamPalette.errorRed;
+  static const Color success = DreamPalette.successGreen;
 }
 
 ColorScheme getColorScheme(Brightness brightness) {

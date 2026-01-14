@@ -30,7 +30,7 @@ class PolizButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final bgColor = backgroundColor ?? SaintColors.primary;
-    final fgColor = foregroundColor ?? SaintColors.contrast;
+    final fgColor = foregroundColor ?? SaintColors.surface;
 
     return SizedBox(
       width: width,

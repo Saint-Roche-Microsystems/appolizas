@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../themes/color_schema.dart';
 import '../../widgets/poliz_card.dart';
 import '../../../models/seguro_model.dart';
 
@@ -29,7 +30,7 @@ class SeguroItem extends StatelessWidget {
           ),
         ),
         trailing: IconButton(
-          icon: const Icon(Icons.delete, color: Colors.red),
+          icon: Icon(Icons.delete, color: SaintColors.error),
           onPressed: onEliminar,
         ),
         children: [

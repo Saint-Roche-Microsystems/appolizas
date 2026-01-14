@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class TerracottaColors {
+class TerracottaPalette {
   static const Color orange = Color(0xFFED6745);
   static const Color cream = Color(0xFFF9F9E7);
   static const Color peach = Color(0xFFF9D6A4);
@@ -12,7 +12,7 @@ class TerracottaColors {
   static const Color warn = Color(0xFFE39E54);
 }
 
-class SkyColors {
+class SkyPalette {
   static const Color darkBlue = Color(0xFF17568D);
   static const Color blue = Color(0xFF6A99D5);
   static const Color light = Color(0xFFFAFCFF);
@@ -21,7 +21,7 @@ class SkyColors {
   static const Color error = Color(0xFFF07D7D);
 }
 
-class WarmColors {
+class WarmPalette {
   static const Color orange = Color(0xFFFF9800);
   static const Color yellow = Color(0xFFFFD700);
   static const Color gold = Color(0xFFFFC107);
@@ -32,11 +32,27 @@ class WarmColors {
   static const Color green = Color(0xFF66BB6A);
 }
 
-class NatureColors {
+class NaturePalette {
   static const Color green = Color(0xFF4F6F5A);
   static const Color lightGreen = Color(0xFF8FAF9B);
   static const Color bone = Color(0xFFF4F1EA);
   static const Color darkGreen = Color(0xFF2E3D35);
   static const Color lightGray = Color(0xFFDDE5DE);
   static const Color gold = Color(0xFFC2A357);
+}
+
+class DreamPalette {
+  static const Color deepPurple = Color(0xFF6B5B95);
+  static const Color lightPurple = Color(0xFFB8A9D6);
+  static const Color lavender = Color(0xFF9B8FB8);
+  static const Color ivory = Color(0xFFFAF9FC);
+  static const Color lightGray = Color(0xFFF0EEF5);
+  static const Color charcoal = Color(0xFF3D3443);
+  static const Color slate = Color(0xFF5A4E6B);
+  static const Color plum = Color(0xFF7E5A8E);
+
+  static const Color errorRed = Color(0xFFCB6B7E);
+  static const Color successGreen = Color(0xFF7A9B8E);
+  static const Color warningAmber = Color(0xFFD4A574);
+  static const Color infoBlue = Color(0xFF7E8BA3);
 }

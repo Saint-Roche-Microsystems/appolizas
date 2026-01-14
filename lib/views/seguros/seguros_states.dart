@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../themes/color_schema.dart';
 
 class LoadingSegurosView extends StatelessWidget {
   const LoadingSegurosView({super.key});
@@ -27,12 +28,12 @@ class ErrorSegurosView extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Icon(Icons.error_outline, size: 64, color: Colors.red),
+          const Icon(Icons.error_outline, size: 64, color: SaintColors.error),
           const SizedBox(height: 16),
           Text(
             'Error: $error',
             textAlign: TextAlign.center,
-            style: const TextStyle(color: Colors.red),
+            style: TextStyle(color: SaintColors.error),
           ),
           const SizedBox(height: 16),
           ElevatedButton(
