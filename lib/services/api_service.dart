@@ -32,13 +32,16 @@ class ApiService {
         body: json.encode(data),
       );
 
+      final decodedBody = json.decode(response.body);
+
       if (response.statusCode == 200 || response.statusCode == 201) {
-        return json.decode(response.body);
+        return decodedBody;
       } else {
-        throw Exception('Error al crear: ${response.statusCode}');
+        final backendError = decodedBody['error'] ?? 'Error desconocido del servidor';
+        throw Exception('Error al crear: $backendError');
       }
     } catch (e) {
-      throw Exception('Error de conexión: $e');
+      throw Exception(e.toString());
     }
   }
 
