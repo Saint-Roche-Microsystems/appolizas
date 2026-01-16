@@ -14,8 +14,8 @@ class SeguroItem extends StatelessWidget {
     return PolizCard(
       margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
       child: ExpansionTile(
-        leading: const CircleAvatar(
-          backgroundColor: Colors.green,
+        leading: CircleAvatar(
+          backgroundColor: SaintColors.primary,
           child: Icon(Icons.shield, color: Colors.white),
         ),
         title: Text(
@@ -25,7 +25,7 @@ class SeguroItem extends StatelessWidget {
         subtitle: Text(
           'Cargo Total: \$${seguro.cargoTotal.toStringAsFixed(2)}',
           style: const TextStyle(
-            color: Colors.green,
+            color: SaintColors.secondary,
             fontWeight: FontWeight.w600,
           ),
         ),
