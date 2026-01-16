@@ -28,9 +28,9 @@ class _SegurosViewState extends ConsumerState<SegurosView> {
       context: context,
       builder: (context) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: const Row(
+        title: Row(
           children: [
-            Icon(Icons.warning_amber_rounded, color: Colors.orange),
+            Icon(Icons.warning_amber_rounded, color: SaintColors.primary),
             SizedBox(width: 12),
             Text('Confirmar eliminación'),
           ],
