@@ -13,6 +13,6 @@ class AutomovilService {
       ApiConfig.automovil,
       automovil.toJson(),
     );
-    return Automovil.fromJson(response);
+    return Automovil.fromJson(response['vehicle']);
   }
 }
