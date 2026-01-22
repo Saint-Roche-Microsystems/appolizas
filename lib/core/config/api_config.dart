@@ -1,6 +1,8 @@
+import 'package:polizas/core/config/environment_config.dart';
+
 class ApiConfig {
-  static const String baseUrl = 'http://127.0.0.1:3000';
-  static const String apiPath = '/poliza/api';
+  static String baseUrl = EnvironmentConfig.apiBaseUrl;
+  static const String apiPath = '/policy/api';
 
   static String get fullApiUrl => '$baseUrl$apiPath';
 
